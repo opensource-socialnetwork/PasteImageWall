@@ -2,7 +2,7 @@
 Ossn.register_callback('ossn', 'init', 'wall_paste_image');
 function wall_paste_image() {
 	$(document).ready(function () {
-		$('.ossn-wall-container textarea').on('paste', function (event) {
+		$('.ossn-wall-container .ossn-wall-textarea').on('paste', function (event) {
 			let items = (event.originalEvent.clipboardData || event.originalEvent).items;
 
 			$.each(items, function (index, item) {
